@@ -1,13 +1,19 @@
 // Higher order functions are functions that take functions as parameters.
 
-fun greetings(func: (String) -> Unit) {
-    func("Arun")
+fun greetings(func : ()-> String){
+    val s = func()
+    println(s)
 }
 
-greetings() { name ->
-    print("Hi, $name")
+fun defineFunc() : String{
+    return "Hi there"
 }
 
+greetings(::defineFunc)
 
-// Syntax for creating a lambda witth parameter
+greetings {
+    "Hi There anonymous"
+}
+
+// Syntax for creating a lambda
 

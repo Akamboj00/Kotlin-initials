@@ -1,22 +1,25 @@
 //void void
 // void return
 // parameter
+//fun greetings() = println("Hi there")
 
-fun greetings(greet: String = "Hi", name: String) = "$greet $name"
+greetings(greet = "Vola", name = "Tom")
 
 
 // Simplify with an equal
 
 
 // Default parameters & named parameter
+fun greetings(name: String, greet: String = "Hi") = println("$greet there, $name")
 
-println(greetings(name = "Torkel", greet = "Hello"))
+//Extension functions (speeding ticket)
 
-val s = "Hello there"
-s.print()
-
-//Extension functions
-
-fun String.print() {
-    println(this)
+fun Int.shouldIssueSpeedingTicket(): String {
+    val limit = 90
+    return if (this > limit) {
+        "Yes"
+    } else {
+        "No"
+    }
 }
+println(100.shouldIssueSpeedingTicket())
