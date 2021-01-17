@@ -1,7 +1,9 @@
+// Class with constructor
 class Number(private val value: Int) {
 
     constructor() : this(1)
 
+    // Init always get called when a class is initialized
     init {
         println(value)
     }

@@ -1,4 +1,4 @@
-// Higher order functions
+// Higher order functions are functions that take functions as parameters.
 
 fun greetFun(func: () -> String) {
     val name: String = func()
@@ -13,6 +13,7 @@ greetFun {
     "Tom"
 }
 
+// Syntax for creating a lambda witth parameter
 val func: (Int) -> Unit = { value ->
     if (value == 1) {
         print("One")
@@ -20,4 +21,3 @@ val func: (Int) -> Unit = { value ->
 }
 
 func(1)
-//
