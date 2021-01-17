@@ -9,8 +9,8 @@ for (i in 0 until 10){
     println(i)
 }
 
-// Mutable List
-val list = mutableListOf<Int>(1,2,3,4,5,6)
+// List in Immutable so to change items use MutableList
+val list : MutableList<Int> = mutableListOf<Int>(1,2,3,4,5,6)
 list.add(7)
 list.remove(2)
 // Filter the list, transform and print each item
