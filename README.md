@@ -1,6 +1,8 @@
 # Kotlin-initials
-
 This is to explain basic syntax of Kotlin. Here are the topics we are going to discuss.
+
+
+
 1.  Mutable and Immutable properties
 2.  Null safety in Kotlin
 3.  Type Inference
@@ -11,3 +13,6 @@ This is to explain basic syntax of Kotlin. Here are the topics we are going to d
 8.  Higher order functions and Lambda
 9.  Collections
 10. Classes and Inheritance
+
+##Exercise
+Create an extension function for String class to return the number of vowels in that string.
